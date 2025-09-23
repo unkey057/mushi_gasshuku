@@ -1,0 +1,177 @@
+﻿:root {
+  --accent: #1f7a8c;
+  --accent-light: #63c5da;
+  --bg: #f4f8fb;
+  --text: #1f2a38;
+  --muted: #5b6573;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem 2.5rem;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.page-header,
+.page-footer {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.page-header {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  color: var(--white);
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.page-header p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+.intro,
+.vote-section,
+.status {
+  background: var(--white);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(31, 122, 140, 0.08);
+}
+
+.intro h2,
+.vote-section h2,
+.status h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+.notice {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.table-wrapper {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+thead th {
+  background: var(--accent);
+  color: var(--white);
+  padding: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+tbody td {
+  border-bottom: 1px solid #d8e5ed;
+  padding: 0.85rem;
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+
+tbody tr:hover {
+  background: rgba(99, 197, 218, 0.12);
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--accent);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(31, 122, 140, 0.25);
+}
+
+button:disabled {
+  background: #9bb7c5;
+  color: #f4f8fb;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button.secondary {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+}
+
+button.secondary:hover:not(:disabled) {
+  background: rgba(99, 197, 218, 0.12);
+  box-shadow: none;
+}
+
+#vote-status {
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+@media (max-width: 780px) {
+  body {
+    padding: 0 0.75rem 2rem;
+  }
+
+  .page-header {
+    border-radius: 0 0 12px 12px;
+  }
+
+  .page-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro,
+  .vote-section,
+  .status {
+    padding: 1.15rem;
+  }
+
+  table {
+    min-width: 100%;
+  }
+}
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+

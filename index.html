@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>キッズキャンプ候補リスト</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>キッズキャンプ候補リスト</h1>
+    <p>関西周辺で合宿や宿泊体験に使える施設を比べやすいようまとめました。</p>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>リストの使い方</h2>
+      <p>移動時間や食事提供の有無などを参考に、気になる施設をチェックしてください。施設名のリンクから公式サイトを確認できます。</p>
+    </section>
+    <section class="vote-section">
+      <h2>候補施設一覧</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">施設名</th>
+              <th scope="col">所在地</th>
+              <th scope="col">移動時間の目安</th>
+              <th scope="col">食事提供</th>
+            </tr>
+          </thead>
+          <tbody id="facility-table-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <p>掲載内容は変更される可能性があります。最新情報は各施設の公式サイトでご確認ください。</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
