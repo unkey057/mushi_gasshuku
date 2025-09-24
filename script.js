@@ -1,21 +1,5 @@
 ﻿const facilities = [
   {
-    id: 'biwako-youth-house',
-    name: 'びわ湖青少年の家',
-    address: '滋賀県高島市勝野1523-1',
-    travelTime: '約1時間39分',
-    mealProvision: 'あり（朝・昼・夕食）',
-    url: 'https://biwako-activecenter.com/'
-  },
-  {
-    id: 'biwako-kodomo-no-kuni',
-    name: 'びわ湖こどもの国',
-    address: '滋賀県高島市安曇川町北船木2981',
-    travelTime: '約1時間45分',
-    mealProvision: '部分的（週末ランチのみ）',
-    url: 'http://www.biwa.ne.jp/~kodomo92/'
-  },
-  {
     id: 'kyoto-rurikei',
     name: '京都府立るり渓少年自然の家（グリーンパルるり渓）',
     address: '京都府南丹市園部町大河内小字石田1',
@@ -40,14 +24,6 @@
     url: 'https://yuai-no-oka.com/'
   },
   {
-    id: 'utano-youth-hostel',
-    name: '宇多野ユースホステル',
-    address: '京都府京都市右京区太秦中山町29',
-    travelTime: '約1時間13分',
-    mealProvision: 'あり（朝・夕食、予約制）',
-    url: 'https://yh-kyoto.or.jp/utano_yh/'
-  },
-  {
     id: 'osaka-nature-house-kaizuka',
     name: '大阪府立少年自然の家（貝塚）',
     address: '大阪府貝塚市木積字秋山長尾3350',
@@ -64,37 +40,21 @@
     url: 'https://shinodayama.com/'
   },
   {
-    id: 'awaji-national-youth-house',
-    name: '国立淡路青少年交流の家',
-    address: '兵庫県南あわじ市阿万塩屋町2249-8',
-    travelTime: '約2時間4分',
-    mealProvision: 'あり（ビュッフェ形式）',
-    url: 'https://awaji.niye.go.jp/'
+    id: 'wapparu-toyonaka',
+    name: '豊中市立青少年自然の家 わっぱる',
+    address: '大阪府豊能郡能勢町宿野436-1',
+    travelTime: '約1時間21分',
+    mealProvision: 'あり（給食 or 自炊）',
+    url: 'https://toyonaka-camp.com/'
   },
   {
-    id: 'kobe-nature-house',
-    name: '神戸市立自然の家（そうぞうのすみか）',
-    address: '兵庫県神戸市灘区六甲山町中一里山1-1',
-    travelTime: '約1時間16分',
-    mealProvision: '軽食あり（カフェ）',
-    url: 'https://kobe-sizennoie.com/'
-  },
-  {
-    id: 'ieshima-center',
-    name: '兵庫県立いえしま自然体験センター',
-    address: '兵庫県姫路市家島町西島3836-6',
-    travelTime: '（姫路港まで約2時間＋フェリー）',
-    mealProvision: 'あり（三食、屋外調理可）',
-    url: 'https://www.shizen-ieshima.com/'
-  },
-  {
-    id: 'nara-outdoor-center',
-    name: '奈良市青少年野外活動センター',
-    address: '奈良県奈良市中ノ川町332',
-    travelTime: '約42分',
-    mealProvision: 'なし（自炊のみ）',
-    url: 'https://www.yac-nara.org/'
-  },
+    id: 'okuina-health',
+    name: '兵庫県立奥猪名健康の郷',
+    address: '兵庫県川辺郡猪名川町杉生字奥山1-22',
+    travelTime: '約1時間24分',
+    mealProvision: 'あり（三食、予約制）',
+    url: 'https://okuina.com/'
+  } ,
   {
     id: 'kihoku-youth-house',
     name: '和歌山県立紀北青少年の家',
@@ -111,14 +71,7 @@
     mealProvision: 'あり（三食、予約制）',
     url: 'https://pya-shirasaki.ssl-lolipop.jp/'
   },
-  {
-    id: 'wapparu-toyonaka',
-    name: '豊中市立青少年自然の家 わっぱる',
-    address: '大阪府豊能郡能勢町宿野436-1',
-    travelTime: '約1時間21分',
-    mealProvision: 'あり（給食 or 自炊）',
-    url: 'https://toyonaka-camp.com/'
-  },
+
   {
     id: 'sankikan',
     name: '三季館',
@@ -127,14 +80,7 @@
     mealProvision: 'あり（夕・朝食、昼食予約制）',
     url: 'http://www.okuina.com/'
   },
-  {
-    id: 'okuina-health',
-    name: '兵庫県立奥猪名健康の郷',
-    address: '兵庫県川辺郡猪名川町杉生字奥山1-22',
-    travelTime: '約1時間24分',
-    mealProvision: 'あり（三食、予約制）',
-    url: 'https://okuina.com/'
-  }
+ 
 ];
 document.addEventListener('DOMContentLoaded', renderTable);
 
@@ -176,3 +122,4 @@ function renderTable() {
     tableBody.appendChild(row);
   });
 }
+
