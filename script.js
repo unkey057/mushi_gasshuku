@@ -16,14 +16,6 @@
     url: 'https://www.kyosemi.or.jp/'
   },
   {
-    id: 'yuai-no-oka',
-    name: '友愛の丘',
-    address: '京都府城陽市寺田南中芝80',
-    travelTime: '約44分',
-    mealProvision: 'あり（三食、団体予約制）',
-    url: 'https://yuai-no-oka.com/'
-  },
-  {
     id: 'osaka-nature-house-kaizuka',
     name: '大阪府立少年自然の家（貝塚）',
     address: '大阪府貝塚市木積字秋山長尾3350',
@@ -122,4 +114,5 @@ function renderTable() {
     tableBody.appendChild(row);
   });
 }
+
 
