@@ -70,7 +70,7 @@
     address: '奈良県宇陀郡御杖村桃俣745',
     travelTime: '約57分',
     mealProvision: 'あり（夕・朝食、昼食予約制）',
-    url: 'http://www.okuina.com/'
+    url: 'https://share.google/oDxWcq17dzQX4CQit'
   },
  
 ];
@@ -114,5 +114,6 @@ function renderTable() {
     tableBody.appendChild(row);
   });
 }
+
 
 
