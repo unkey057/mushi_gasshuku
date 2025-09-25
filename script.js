@@ -45,7 +45,7 @@
     address: '兵庫県川辺郡猪名川町杉生字奥山1-22',
     travelTime: '約1時間24分',
     mealProvision: 'あり（三食、予約制）',
-    url: 'https://okuina.com/'
+    url: 'http://www.okuina.com/'
   } ,
   {
     id: 'kihoku-youth-house',
@@ -114,6 +114,7 @@ function renderTable() {
     tableBody.appendChild(row);
   });
 }
+
 
 
 
